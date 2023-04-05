@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white; 
+}
+header{
+    width: 80vw;
+    margin: 2vh auto;
+    border-radius: 5px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 2vw;
+}
+nav ul{
+    width: 33vw;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: yellow;
+}
+ul li a:hover{
+    color: red;
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 10px;
+    width: 30vw;
+    margin: 10vw auto;
+}
+#signUp, #login{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}

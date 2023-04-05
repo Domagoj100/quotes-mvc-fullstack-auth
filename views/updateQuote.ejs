@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Update Quote</title>
+        <link rel="stylesheet" href="../css/style_addQuote.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <form method="POST" action="/quotes/updateQuote?_method=put" class="updateQuote">
+                <textarea name='quote' placeholder="Quote" class="quote" required></textarea>
+                <input name='author' type="text" placeholder="Author" class="author" required>
+                <input name='source' type="text" placeholder="Source" class="source">
+                <input name='id' type='hidden' class="id">
+                <input type="submit" class="button">
+            </form>
+        </div>
+            
+        <script src="/js/updateQuote.js" type="text/javascript"></script>
+    </body>
+</html>

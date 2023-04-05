@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Quotes</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="stylesheet" href="css/style_quotes.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <% if(user){ %>
+                        <li><a href="/account/logout">Logout</a></li>
+                     <% }else{ %>
+                        <li><a href="/account">Login</a></li>
+                     <% } %>
+                </ul>
+            </nav>
+        </header>
+    
+        <div id="container">
+            <% for(let i=0; i<data.length; i++){ %>
+                <div class="quote-box" data-id="<%=data[i]._id%>">
+                    <p class="quote">
+                        <%= data[i].quote%>
+                    </p>
+                    <span class="author">
+                        <%= data[i].author%>
+                    </span>
+                    <span class="source">
+                        <%= data[i].source%>
+                    </span>
+                    <%if(user){ %>
+                        <div class="options">
+                            <a class="fa fa-light fa-trash-can"></a>
+                            <a class="fa fa-cog"></a>
+                        </div>
+                    <%}%>
+                </div>
+            <% } %>
+        </div>
+    <% if(user){ %>
+        <a class="fa fa-plus fa-regular fa-2xl "></a>
+    <% } %>
+    <script src="js/quotes.js" type="text/javascript"></script>
+    </body>
+</html>
+
+

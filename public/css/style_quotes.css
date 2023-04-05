@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white; 
+}
+header{
+    width: 80vw;
+    margin: 2vh auto;
+    border-radius: 5px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 2vw;
+}
+nav ul{
+    width: 33vw;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: yellow;
+}
+ul li a:hover{
+    color: red;
+}
+
+/* Container for all quotes */
+#container{
+    display: flex;
+    align-items: flex-start; 
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: auto;
+}
+
+/* Quote container  */
+.quote-box{
+    position: relative;
+    width: calc(33.3% - 10px);
+    margin: 5px;
+    padding: 5px;
+    background: gray;
+    border-radius: 5px;
+}
+.quote{
+    font-size: 16px;
+    line-height: 18px;
+    color: yellow;
+    margin-bottom: 5px;
+}
+.author{
+    font-size: 16px;
+    color: goldenrod;
+}
+.source{
+    font-style: italic;
+}
+.options{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+.fa-trash-can{
+    color: yellow;
+}
+.fa-trash-can:hover{
+    cursor: pointer;
+    color: red;
+}
+.fa-cog{
+    color: yellow;
+}
+.fa-cog:hover{
+    cursor: pointer;
+    color: red;
+}
+
+/* CRUD add-quote */
+.fa-plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    height: 50px;
+    width: 50px;
+    color: yellow;
+    background: gray;
+    border-radius: 50%;
+}
+.fa-plus:hover{
+    cursor: pointer;
+    color: red;
+    background-color: gray;
+}
