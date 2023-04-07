@@ -39,24 +39,24 @@ ul li a:hover{
 /* Container for all quotes */
 #container{
     display: flex;
-    align-items: flex-start; 
-    flex-wrap: wrap;
+    flex-flow: wrap;
+    align-items: flex-start;
     width: 90vw;
     margin: auto;
+    border: 2px solid yellow;
 }
 
 /* Quote container  */
 .quote-box{
-    position: relative;
-    width: calc(33.3% - 10px);
-    margin: 5px;
-    padding: 5px;
+    width: calc(33.3% - 6px);
+    margin: 3px;
+    padding: 3px;
     background: gray;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 .quote{
     font-size: 16px;
-    line-height: 18px;
+    line-height: 16px;
     color: yellow;
     margin-bottom: 5px;
 }
@@ -68,9 +68,8 @@ ul li a:hover{
     font-style: italic;
 }
 .options{
-    position: absolute;
-    bottom: 5px;
-    right: 10px;
+    display: block;
+    margin-left: 90%;
 }
 .fa-trash-can{
     color: yellow;
