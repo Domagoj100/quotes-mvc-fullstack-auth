@@ -38,16 +38,23 @@ ul li a:hover{
 
 /* Container for all quotes */
 #container{
-    display: grid;
+    display: column;
+    columns: 3;
+    /* display: grid;
     gap: 5px;
     grid-template-columns: repeat(3, 1fr);
-    align-items: flex-start;
+    align-items: flex-start; */
     width: 90vw;
     margin: auto;
 }
 
+#container > *{
+    break-inside: avoid;
+}
+
 /* Quote container  */
 .quote-box{
+    margin: 5px;
     padding: 5px;
     background: gray;
     border-radius: 2px;
