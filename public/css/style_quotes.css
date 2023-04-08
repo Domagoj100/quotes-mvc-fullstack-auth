@@ -38,19 +38,17 @@ ul li a:hover{
 
 /* Container for all quotes */
 #container{
-    display: flex;
-    flex-flow: wrap;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
     align-items: flex-start;
     width: 90vw;
     margin: auto;
-    border: 2px solid yellow;
 }
 
 /* Quote container  */
 .quote-box{
-    width: calc(33.3% - 6px);
-    margin: 3px;
-    padding: 3px;
+    padding: 5px;
     background: gray;
     border-radius: 2px;
 }
