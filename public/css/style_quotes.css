@@ -40,10 +40,6 @@ ul li a:hover{
 #container{
     display: column;
     columns: 3;
-    /* display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: flex-start; */
     width: 90vw;
     margin: auto;
 }
