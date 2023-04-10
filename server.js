@@ -13,9 +13,8 @@ const homeRoutes = require('./routes/home')
 const quotesRoutes = require('./routes/quotes')
 
 require('dotenv').config({path: './config/.env'})
-mongoose.set('strictQuery', true); // https://stackoverflow.com/questions/74711770/how-to-fix-mongoose-deprecation-warning-the-strictquery
+mongoose.set('strictQuery', true)
 
-// Passport config
 require('./config/passport')(passport)
 
 connectDB()
@@ -27,7 +26,6 @@ app.use(express.json())
 app.use(methodOverride("_method"));
 app.use(cors())
 
-// Sessions (express-session, connect-mongo)
 app.use(
     session({
         secret: 'free candy inside',

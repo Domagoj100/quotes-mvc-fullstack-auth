@@ -1,6 +1,5 @@
 document.querySelector('.stoa').addEventListener('click', stoaQuote)
 
-// Fetch random document from DB and displays it(quote, author and source)
 function stoaQuote(){
     fetch('http://localhost:3000/fetchquote')
     .then(data => data.json())
